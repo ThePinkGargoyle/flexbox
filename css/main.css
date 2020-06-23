@@ -108,81 +108,72 @@ html {
 body {
   /* set height to 100% - these are important for allowing content to vertically align */
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 700;
-  padding: 2em;
+  padding: 2em 2em;
+  font-size: 1.25em;
   color: #fff;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
 }
 
-.wrapper {
-  /* set the display to flex and use the justify-content & align-items properties to center all child elements on the page */
+.flex-container {
   background: #222;
   background:rgba(0,0,0,0.7);
   border-radius: 10px;
   display: flex;
-  flex-flow: row wrap;
-  justify-items: space-between;
-  align-items: center;
-  width: 70%;
-  padding: 1.5%;
-  margin-left: 11.57%;
-  margin-right: 11.57%;  
+  flex-flow: column wrap;
+  justify-items: center;
+  align-content: center;
+  padding: 1rem;
 }
 
-.div-1, .div-2, .div-3 {
-  /* set the display to flex and use the justify-content & align-items properties to center the text within the div*/
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1.25em;
-  height: auto;
-  text-align: left;
-}
-
-strong {
-    font-weight: bold;
-}
-
-span {
+p span {
   font-family: 'Lora', sans-serif;
   color: #fa0075;
   font-weight: 900;
 }
 
-#follow {
-    width: 100%;
+header, footer {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
 }
 
-#follow p {
-  text-align: center;
+header h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 1em;
 }
 
-#follow a {
-    color: rgb(88, 243, 248);
-    text-decoration: none;
+main {
+width: 100%;
+display: flex;
+justify-content: center;
+border-bottom: 1px solid #fff;
 }
 
-#follow ul {
-    display: inline-flex;
-    justify-content: center;
-    list-style-type: none;
-    width: 70%;
-    margin: auto center;
+main p {
+font-size: 1.35em;
 }
 
-#follow li {
-    padding-left: .3rem;
-    padding-right: .3rem;
+.flex-items {
+display: flex;
+justify-content: center;
+align-items: center;
+line-height: 1.5em;
+font-size: 1em;
+border-bottom: 1px solid #555;
 }
 
 footer {
-    width: 100%;
-    padding-top: 2%;
-    text-align: center;
+border-top: 1px solid #fff;
+flex-flow: row wrap;
+justify-content: center;
+align-items: flex-end;
 }
+
 
 footer span {
     color: #fff;
@@ -193,17 +184,29 @@ footer a {
     text-decoration: none;
 }
 
-/* ----------- Tablets larger than 768px wide ----------- */
-@media (min-width:  768px) {
-	#follow ul {
-        width: 83.5%;
-    }
+#follow p {
+  text-align: center;
 }
 
-/* ----------- Monitors larger than 1200px wide ----------- */
-#follow ul {
-        width: 90.2%;
-    }
+#follow span {
+    font-size:1.8rem;
+    font-weight: bold;
+}
+
+#follow a {
+    color: #fff;
+    text-decoration: none;
+    font-stretch: 5rem;
+
+    
+}
+
+#follow i {
+    color: #fff;
+    font-size: 3rem;
+    padding: 0 .2rem;    
+}
+
 
 
 /* ==========================================================================
