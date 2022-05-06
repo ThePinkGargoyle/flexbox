@@ -110,7 +110,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 2em 2em;
   font-size: 1.25em;
-  color: #fff;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -132,7 +132,7 @@ body {
 
 p span {
   font-family: 'Lora', sans-serif;
-  color: #fa0075;
+  color: #ff0099;
   font-weight: 900;
 }
 
